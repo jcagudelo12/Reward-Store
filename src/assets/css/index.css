@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.header {
+  background-color: #f9f9f9;
+}
+
+.header_info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  font-family: sans-serif;
+  margin: 0px 10px;
+  color: rgb(104, 104, 104);
+}
+.header_user_container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.header_user_name {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.header_user_coins {
+  display: flex;
+  align-items: center;
+  background-color: rgb(219, 219, 219);
+  padding: 0px 10px;
+  border-radius: 23px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+.header_user_coins:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.03);
+  box-shadow: 3px 3px 3px gray;
+}
+.coin_icon {
+  margin-left: 5px;
+  padding-top: 6px;
+}
+
+.header_history {
+  display: flex;
+  align-items: center;
+  background-color: rgb(219, 219, 219);
+  padding: 13px 10px;
+  border-radius: 23px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.header_history:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.03);
+  box-shadow: 3px 3px 3px gray;
+}
+
+.history_body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.history_item {
+  width: 320px;
+
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.header_hero_container {
+  height: 300px;
+}
+
+.header_hero_img {
+  object-fit: cover;
+  width: 100%;
+  min-width: 665px;
+  height: 300px;
+}
+
+.header_hero_text {
+  position: relative;
+  bottom: 70px;
+  left: 60px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.main_container {
+  background-color: #f9f9f9;
+  padding: 0px 70px;
+}
+
+.filters_container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 30px;
+}
+
+.filters_products {
+  margin: 0px 8px;
+  padding-right: 10px;
+  color: #616161;
+}
+
+.separator_products {
+  border-left: 1px solid #8a8a8a;
+  height: 30px;
+}
+
+.filters_sort {
+  margin: 0px 10px 0px 15px;
+  color: #a3a3a3;
+}
+
+.filters_sort_category,
+.filters_sort_lowest,
+.filters_sort_highest {
+  padding: 10px 15px;
+  border-radius: 25px;
+  margin: 0px 10px;
+  background-color: #ededed;
+  color: #a3a3a3;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.filters_sort_category:hover,
+.filters_sort_lowest:hover,
+.filters_sort_highest:hover {
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: #0ad4fa;
+  color: white;
+  cursor: pointer;
+}
+
+.filters_sort_category:focus,
+.filters_sort_lowest:focus,
+.filters_sort_highest:focus {
+  outline: none;
+}
+
+.arrow {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.separator_filter {
+  color: #616161;
+  min-width: 420px;
+  margin-bottom: 25px;
+}
+
+.items_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item_container {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  background-color: white;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.item_container:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.03);
+  box-shadow: 6px 6px 6px gray;
+}
+
+.item_button {
+  position: relative;
+  top: 10px;
+  left: 195px;
+  cursor: pointer;
+}
+
+.item_missing_money {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #656565;
+  padding: 0px 10px;
+  border-radius: 23px;
+  padding-right: 3px;
+  opacity: 0.7;
+  color: white;
+  margin: 10px 10px 0 90px;
+  pointer-events: none;
+}
+
+.buy_img {
+  content: url("../icons/buy-blue.svg");
+}
+
+.buy_img:hover {
+  content: url("../icons/buy-white.svg");
+  transition: all 0.5s ease;
+  transform: scale(1.03);
+}
+
+.item_img_container {
+  display: flex;
+  justify-content: center;
+}
+
+.item_img {
+  width: 180px;
+  height: auto;
+}
+
+.separator_item {
+  width: 200px;
+  color: #d9d9d9;
+}
+
+.item_info {
+  margin: 0 25px;
+  font-family: sans-serif;
+}
+
+.item_category {
+  color: #a3a3a3;
+  font-size: 15px;
+}
+
+.item_name {
+  color: #616161;
+}
+
+.item_cost {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 35px;
+  color: #3a3a3a;
+  text-align: end;
+  font-size: 18px;
+  align-items: center;
+}
+
+.coin {
+  margin: 5px 0 0 2px;
+  width: 20px;
+}
+.add_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.added_points {
+  text-align: center;
+}
+
+.redeem {
+  text-align: center;
+}
